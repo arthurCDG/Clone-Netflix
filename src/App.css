@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-size: 16px;
+    padding: 2rem;
+    background: black;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-and-nav-bar {
+    display: flex;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.netflix-logo {
+    width: 150px;
+    margin-right: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-button {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.search-bar-and-profile {
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: right;
+}
+
+.search-bar {
+    width: 500px;
+    height: 3rem;
+    border-radius: 40px;
+    padding-left: 2rem;
+}
+
+.profile-pic {
+    width: 4rem;
+    margin-left: 4rem;
+    border-radius: 50%;
+}
+
+p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-img {
+    height: 200px;
+    margin: 0 5px;
+    border-radius: 5px;
 }
